@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: regular;
+}
+
+@font-face {
+    font-family: regular;
+    src: url(/assets/fonts/ShortStack-Regular.ttf);
+}
+
+body{
+    background-image: url(https://media-cldnry.s-nbcnews.com/image/upload/newscms/2016_11/1016196/rock-paper-scissors-today-tease-160317.jpg);
+    background-position-y: 10%;
+    background-size: cover;
+
+    .game{
+        .top{
+            margin: 2rem 6rem 0;
+
+            .box{
+                cursor: pointer;
+                transition: 0.5s;
+
+                &:hover{
+                    transform: scale(1.1);
+                }
+
+                .img{
+                    width: 60%;
+                    margin: auto;
+
+                    img{
+                        width: 100%;
+                        border-radius: 100%;
+                    }
+                }
+            }
+        }
+
+        .bottom{
+            margin-top: 4rem;
+
+            .box{
+                display: flex;
+                justify-content: center;
+
+                .img{
+                    width: 15%;
+                    padding: 0 2rem;
+
+                    img{
+                        width: 100%;
+                        border-radius: 100%;
+                    }
+                }
+            }
+
+            .result{
+                margin-top: 6rem;
+
+                h1{
+                    text-align: center;
+                    color: white;
+                    font-weight: bold;
+                    font-size: 64px;
+                }
+            }
+        }
+    }
+
+    #newgame{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate((-50%,-50%));
+        width: 30%;
+        padding: 4rem 0;
+        background-color: gold;
+        border-radius: 20px;
+        display: none;
+
+        h1{
+            text-align: center;
+            font-size: 48px;
+            font-weight: bold;
+        }
+
+        .button{
+            margin: 1.5rem auto 0;
+            display: flex;
+            justify-content: center;
+
+            button{
+                padding: 1.2rem 4rem;
+                border-radius: 10px;
+                border: none;
+                color: white;
+                background-color: #42b72a;
+                font-size: 24px;
+                font-weight: bold;
+                text-decoration: none;
+                transition: 0.5s;
+
+                &:hover{
+                    background-color: #268d12;
+                }
+            }
+        }
+    }
+}

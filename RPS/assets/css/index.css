@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: regular;
+}
+
+@font-face {
+  font-family: regular;
+  src: url(/assets/fonts/ShortStack-Regular.ttf);
+}
+body {
+  background-image: url(https://hips.hearstapps.com/hmg-prod/images/people-playing-paper-rock-scissors-royalty-free-illustration-1583269312.jpg);
+  background-position-y: 120%;
+  background-size: cover;
+}
+body .enter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: gold;
+  padding: 1rem 4rem 4rem;
+  border-radius: 20px;
+}
+body .enter .text marquee {
+  font-size: 36px;
+  font-weight: bold;
+}
+body .enter .ahref {
+  margin: 2rem auto 0;
+}
+body .enter .ahref a {
+  padding: 1.5rem 3rem;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  background-color: #42b72a;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.5s;
+}
+body .enter .ahref a:hover {
+  background-color: #268d12;
+}/*# sourceMappingURL=index.css.map */
